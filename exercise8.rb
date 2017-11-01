@@ -16,13 +16,6 @@ while count <= runners
   count+=1
 end
 
-puts distance
-puts minutes
-puts speeds
-puts speeds.each_with_index.max[1]
-puts speeds.each_with_index.min[1]
-puts speeds.minmax
-
 if speeds.minmax[0] == speeds.minmax[1]
   puts "Everybody tied at #{speeds[speeds.each_with_index.max[1]]} m/s!"
 else
