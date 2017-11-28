@@ -3,7 +3,7 @@ def check_syntax(str)
     "(" => ")",
     "[" => "]",
     "{" => "}",
-    "<" => ">"
+    "<" => ">" #added angled bracked to the hash
   }
   open = []
   opening_chars = openables.keys
@@ -40,7 +40,7 @@ def check_syntax(str)
 
   if open.any?
     required_char = openables[open.last]
-    puts "* You have a syntax error: the string ended without a closing #{open.first}"
+    puts "* You have a syntax error: the string ended without a closing #{open.first}" #changed so it gives the first unclosed bracket not the last
   end
 
   return open.empty?
