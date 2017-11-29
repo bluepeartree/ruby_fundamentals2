@@ -18,11 +18,11 @@
 puts "Please enter an integer:"
 number = gets.to_i
 
-if number.digits[0] == 1 && number != 11
+if number.digits[0] == 1 && number.digits[1]!= 1
   ordinal_number = number.to_s + "st"
-elsif number.digits[0] == 2 && number !=12
+elsif number.digits[0] == 2 && number.digits[1]!= 1
   ordinal_number = number.to_s + "nd"
-elsif number.digits[0] == 3 && number !=13
+elsif number.digits[0] == 3 && number.digits[1]!= 1
   ordinal_number = number.to_s + "rd"
 else
   ordinal_number = number.to_s + "th"
