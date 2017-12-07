@@ -4,9 +4,9 @@ words.each do |word|
   check_word = word.downcase!
   if check_word == nil && word.length > 4
     puts "#{word.downcase!}long and lowercase"
-  elsif check_word == nil && word.length <= 4
+  elsif check_word == nil
     puts "lowercase"
-  elsif word.length > 4 &&  check_word != nil
+  elsif word.length > 4 
     puts "long"
   else
     puts word.upcase!
